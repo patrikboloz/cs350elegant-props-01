@@ -1,0 +1,17 @@
+<!-- properties/detail.html -->
+{% extends "core/base.html" %}
+{% load humanize %}
+
+
+{% block page_title %} <---->Description<----> {% endblock page_title %}
+
+{% block content %}
+
+<p>{{object.message_subject}}</p>
+<p>{{object.message}}</p>
+<p>{{object.date}}</p>
+<p>{{object.email}}</p>
+<p>{{object.description}}</p>
+
+{% endblock content %}
+

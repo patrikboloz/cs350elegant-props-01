@@ -10,5 +10,6 @@ class Property(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=10)
     nearest_elementary = models.CharField(max_length=256)
 
-
+    #My added Field
+    zipcode = models.IntegerField(null=True)
 

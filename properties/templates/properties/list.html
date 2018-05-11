@@ -2,7 +2,7 @@
 {% extends "core/base.html" %}
 {% load humanize %}
 
-{% block page_title %} Proper {% endblock page_title %}
+{% block page_title %} Property {% endblock page_title %}
 
 {% block page_header %}Our Properties{% endblock page_header %}
 
@@ -17,7 +17,7 @@
                 <h5 class="card-title">{{ prop.prop_type }}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${{ prop.price|intcomma }}</h6>
                 <p class="card-text">{{ prop.description }}</p>
-                <a href="{% url 'properties:detail' prop.pk %}" class="card-link-bottom btn btn-primary btn-sm">Check it out</a>
+                <a href="{% url 'properties:detail' prop.pk %}" class="card-link-bottom btn btn-primary btn-sm">Click Here</a>
             </div>
         </div>
     </div>
